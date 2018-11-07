@@ -1,12 +1,16 @@
 import { combineReducers } from 'redux';
-import addLineItem from './reducer_addLineItem';
-import taxPercentage from './reducer_taxPercentage';
-import updateLineItem from './reducer_updateLineItem';
+import AddItemReducer from './reducer_addLineItem';
+import DelLineItemReducer from './reducer_delLineItem';
+import TaxPercentageReducer from './reducer_taxPercentage';
+import UpdateLineItemReducer from './reducer_updateLineItem';
+
 
 const rootReducer = combineReducers({
-  tax: taxPercentage,
-  addLineItem: addLineItem,
-  lineItem: updateLineItem
+  addItem: AddItemReducer,
+  delItem: DelLineItemReducer,
+  taxPer: TaxPercentageReducer,
+  updateItem: UpdateLineItemReducer
+
 });
 
 export default rootReducer;

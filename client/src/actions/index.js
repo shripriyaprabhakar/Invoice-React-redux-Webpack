@@ -1,72 +1,48 @@
-let numeral = require('numeral');
+// let numeral = require('numeral');
 
-// const API_KEY = config.API_KEY;
-// const ROOT_URL = `http://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`;
 
-// export const FETCH_WEATHER = 'FETCH_WEATHER';
-// export const FETCH_POSTS = 'fetch_posts';
+// export const ADD_LINE_ITEM = 'ADD_LINE_ITEM';
+// export const DELETE_LINE_ITEM = 'DELETE_LINE_ITEM';
+// export const UPDATE_TAX = 'UPDATE_TAX';
+// export const UPDATE_LINE_ITEM = 'UPDATE_LINE_ITEM';
+// export const UPDATE_INVOICE_NUMBER = 'UPDATE_INVOICE_NUMBER';
 
-// export function fetchWeather(city) {
-//   const url = `${ROOT_URL}&q=${city},us`;
-//   const request = axios.get(url);
-  
-//   // console.log('req', request);
+
+
+
+// export function addLineItem() {
 //   return {
-//   	type: FETCH_WEATHER,
-//   	payload: request
-//   };
+//     type: 'ADD_LINE_ITEM'
+//   }
 // }
-// export function fetchPosts() {
 
-//   const request = axios.get('/posts')
-
+// export function deleteLineItem (lineItemId) {
 //   return {
-//     type: FETCH_POSTS,
-//     payload: request
-//   };
+//     type: 'DELETE_LINE_ITEM',
+//     lineItemId: lineItemId
+//   }
+// }
 
-export const ADD_LINE_ITEM = 'ADD_LINE_ITEM';
-export const DELETE_LINE_ITEM = 'DELETE_LINE_ITEM';
-export const UPDATE_TAX = 'UPDATE_TAX';
-export const UPDATE_LINE_ITEM = 'UPDATE_LINE_ITEM';
-export const UPDATE_INVOICE_NUMBER = 'UPDATE_INVOICE_NUMBER';
+// export function updateTax(taxPercentage) {
+//   return {
+//     type: 'UPDATE_TAX',
+//     taxPercentage: numeral(taxPercentage)
+//   }
+// }
 
+// export function updateLineItem(id, lineItem) {
+//   return {
+//     type: 'UPDATE_LINE_ITEM',
+//     lineItemId: id,
+//     lineItem: lineItem
+//   }
+// }
 
-
-
-export function addLineItem() {
-  return {
-    type: 'ADD_LINE_ITEM'
-  }
-}
-
-export function deleteLineItem (lineItemId) {
-  return {
-    type: 'DELETE_LINE_ITEM',
-    lineItemId: lineItemId
-  }
-}
-
-export function updateTax(taxPercentage) {
-  return {
-    type: 'UPDATE_TAX',
-    taxPercentage: numeral(taxPercentage)
-  }
-}
-
-export function updateLineItem(id, lineItem) {
-  return {
-    type: 'UPDATE_LINE_ITEM',
-    lineItemId: id,
-    lineItem: lineItem
-  }
-}
-
-export function updateInvoiceNumber(newNumber) {
-  return {
-    type: 'UPDATE_INVOICE_NUMBER',
-    number: newNumber
-  }
-}
+// export function updateInvoiceNumber(newNumber) {
+//   return {
+//     type: 'UPDATE_INVOICE_NUMBER',
+//     number: newNumber
+//   }
+// }
   
 

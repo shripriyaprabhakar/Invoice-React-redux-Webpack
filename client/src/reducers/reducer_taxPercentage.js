@@ -1,4 +1,7 @@
-import { UPDATE_TAX } from '../actions/index';
+import { UPDATE_TAX } from '../actions/types';
+
+let numeral = require('numeral');
+
 
 export function taxPercentageReducer(state = numeral(0), action) {
   switch(action.type) {
@@ -7,6 +10,6 @@ export function taxPercentageReducer(state = numeral(0), action) {
     default:
       return state;
   }
-};
+}
 
 
