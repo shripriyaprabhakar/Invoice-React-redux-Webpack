@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+// import { createStore, applyMiddleware } from 'redux';
 
 
 import reducers from './reducers';
 import App from './components/App.jsx';
 
 
-import PostsNew from './components/PostsNew.js';
+
 
 let invoicingApp = function(state = {}, action) {
   return {
