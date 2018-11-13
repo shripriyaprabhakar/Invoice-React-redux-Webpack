@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { addLineItem, updateTax } from '../actions/types';
 
-import { Invoice } from '../components/Invoice';
+import { Main } from '../components/Main';
 
 
 const computeTotals = (lineItems, tax) => {

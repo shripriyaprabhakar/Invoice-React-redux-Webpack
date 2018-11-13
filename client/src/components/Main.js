@@ -6,13 +6,13 @@ import {
 let numeral = require('numeral');
 
 import NumberFormat from 'react-number-format';
-import { EditableCell } from './LineItems';
+import { EditableCell } from './Items';
 
 
 import LineItemsContainer from '../containers/LineItemsContainer';
 
 
-export class Invoice extends React.Component {
+export class Main extends React.Component {
 
   constructor(props) {
     super(props);

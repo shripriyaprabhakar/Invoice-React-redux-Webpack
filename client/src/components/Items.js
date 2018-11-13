@@ -30,7 +30,7 @@ class EditableCell extends React.Component {
   }
 }
 
-class LineItems extends React.Component {
+class Items extends React.Component {
   
   constructor(props) {
     super(props)
@@ -101,6 +101,6 @@ class LineItems extends React.Component {
 }
 
 export default {
-  LineItems,
+  Items,
   EditableCell
 }

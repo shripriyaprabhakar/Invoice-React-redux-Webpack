@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { addLineItem, updateLineItem } from '../actions/types';
 
-import { LineItems } from '../components/LineItems';
+import { Items } from '../components/Items';
 
 const mapStateToProps = (state) => {
   return {
@@ -24,6 +24,6 @@ const mapDispatchToProps = (dispatch) => {
 const LineItemsContainer= connect(
   mapStateToProps,
   mapDispatchToProps
-)(LineItems)
+)(Items)
 
 export default LineItemsContainer
