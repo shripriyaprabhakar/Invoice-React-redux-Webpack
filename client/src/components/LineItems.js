@@ -1,13 +1,11 @@
 import React from 'react';
 import {
-  Table,
-  Card,
   Button,
-  Icon, Input
+  Table
 } from 'antd'
 import * as Immutable from 'immutable';
 import NumberFormat from 'react-number-format';
-import Pretty from './Pretty';
+
 let numeral = require('numeral');
 
 class EditableCell extends React.Component {
@@ -20,7 +18,7 @@ class EditableCell extends React.Component {
     return (
       <div className="editable-cell">
         <div className="editable-cell-input-wrapper">
-          <Input
+          <input
             placeholder={this.props.placeholder}
             value={this.props.value}
             onChange={this.props.onChange}

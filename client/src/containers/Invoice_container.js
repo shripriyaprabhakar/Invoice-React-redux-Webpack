@@ -5,7 +5,6 @@ import { addLineItem, updateTax } from '../actions/types';
 import { Invoice } from '../components/Invoice';
 
 
-
 const computeTotals = (lineItems, tax) => {
   let subTotal = lineItems.reduce((initial, lineItem) => {
     return numeral( (initial.value() || 0) + (lineItem.get('total').value() || 0) )
@@ -35,7 +34,7 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const InvoiceContainer = connect(
+let InvoiceContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Invoice)

@@ -5,7 +5,7 @@ let numeral = require('numeral');
 let uuid = require('uuid');
 
 
-export function lineItemsReducer (state = List(), action){
+export function lineItemsReducer (state = [], action){
   switch(action.type) {
     case 'DELETE_LINE_ITEM':
       var newLineItems = state.filterNot((lineItem) => {

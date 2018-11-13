@@ -1,20 +1,16 @@
 import React from 'react';
 import { 
   Table,
-  Button
 } from 'antd';
+
 let numeral = require('numeral');
 
 import NumberFormat from 'react-number-format';
 import { EditableCell } from './LineItems';
-import { FromDetails } from './FromDetails';
-import ToDetailsContainer from '../containers/ToDetailsContainer';
+
+
 import LineItemsContainer from '../containers/LineItemsContainer';
 
-const firstRowStyle = {
-  paddingTop: 30,
-  paddingBottom: 30
-}
 
 export class Invoice extends React.Component {
 
@@ -74,12 +70,13 @@ export class Invoice extends React.Component {
 
     return (
       <div>
-     
-            <h1>INVOICE</h1>
-            <ToDetailsContainer/>
-            <FromDetails/>
+        <h1>INVOICE</h1>
+        
               <LineItemsContainer/>
+    
               <Table dataSource={totalDataSource} columns={totalColumns} pagination={false} showHeader={false} size="middle" />
+  
+
       </div>
     )
   }
